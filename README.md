@@ -8,18 +8,19 @@ The libcurl binding layer is written in C++
 Testcases are written in curl_client_test.cc.
 
 
-INSTALL
-  - Use build.sh to build the libraries first:- nghttp2 and libcurl followed by client simulator.
-    The script pulls the library sources from github links which can be specified in the script.
+# Installation
+Use build.sh to build the libraries first:- nghttp2 and libcurl followed by client simulator.
+*The script pulls the library sources from github links which can be specified in the script*
 
 
-USE
-  - Run the simulator with the desired log level, 1 - ERROR, 2 - INFO, 3 - DEBUG.
-    The server should be running with desired settings as per test cases.
-    Use Ctrl+C to terminate the simulator.
+# Usage
+Run the simulator with the desired log level, **`1`** -`ERROR`, **`2`** - `INFO`, **`3`** - `DEBUG`.
+The server should be running with desired settings as per test cases.
+Use `Ctrl+C` to **terminate** the simulator.
 
 
-e.g RUN:
+# Example
+```
 $ ./clientSimulator -l 2
 2019-12-05 05:21:51 | INFO    | curl_client_test.cc | ____C_A_T_C_H____T_E_S_T____0:272 | ASync HTTP URL:http://127.0.0.1:9090/test Txn:1
 
@@ -37,4 +38,4 @@ $ ./clientSimulator -l 2
 
 ===============================================================================
 All tests passed (9 assertions in 3 test cases)
-
+```
